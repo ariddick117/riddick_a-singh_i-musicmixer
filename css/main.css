@@ -5,3 +5,145 @@
 {
  color: #fff;
 }
+@charset "utf-8";
+/* CSS Document */
+body {
+	background-image: url(../);
+	background-repeat: repeat;
+	background-color: #333;
+	color: #FFF;
+	font-size: 16px;
+}
+
+.container
+{
+	width:1280px;
+	height: auto;
+	margin:auto;
+	background-color:#666666;
+}
+
+.hidden { display: none }
+
+#game-boards {  
+	display:flex; 
+	flex-direction:row;
+	width: 100%;
+	 text-align: center; }
+#dragging-area
+{
+	display:flex;
+	flex-direction:row;
+	flex-wrap:nowrap;
+	justify-content: space-between;
+	background-color:#666666;
+ }
+
+.droppieces, .dropping-area{
+	margin-top: 40px;
+	height: 400px;
+	display: inline-block;
+	background-color: #000;
+	color: inherit;
+	overflow: hidden;
+}
+
+.droppieces { width: 500px; margin-right: 150px; margin-left:150px;  }
+
+.dropping-area { width: 100%; }
+
+.mixer-image {
+	width: 40%;
+	display: block;
+	padding: 8px;
+	cursor: pointer;
+}
+
+/* arrange the puzzle pieces on the board */
+
+/*.mixer-image:nth-child(even){
+	float:right;
+	clear: both;
+}
+.mixer-image:nth-child(odd){
+	float:left;
+	clear: both;
+}
+/*
+.tl, .br{text-align: right;}
+.tr img {bottom:0;}
+.tl img {bottom:0; right:0;}
+.bl img{right:0;}
+
+*/
+
+/* set up drop zones */
+.mixer-imagerow1
+{
+	flex-direction:row;
+}
+.drop-zone
+{
+	
+	
+	float:left;
+	position:relative;
+}
+.drop-zone img
+{
+	width:auto !important;
+	padding:0 !important;
+	cursor: default;
+	position: absolute;
+}
+/* end board styles */
+
+
+header {
+	padding:0;
+	position: relative;
+	top: 20px;
+	width: 100%;
+	height:100px;
+	margin: 0px auto;
+	text-align: center;
+	background-color:#cdcdcd;
+
+
+}
+
+header h1 {
+	font-size: 3.25em;
+  	letter-spacing: 3px;
+	margin: 10px 0;
+	color:#000;
+}
+
+header p, footer p { 
+	font-size: 1.7em; 
+	letter-spacing: 2px; 
+	margin: 10px 0 
+}
+
+footer {
+	position: relative;
+	width: 600px;
+	margin: 65px auto 0;
+	text-align: center;
+}
+
+#buttonHolder { 
+	display:flex;
+	flex-direction:column;
+	margin: 0px auto; 
+	text-align: center; }
+
+#buttonHolder  {
+	margin-left: 5px;
+	margin-right: 5px;
+	border-radius: 20px;
+	border: thin solid #333;
+	cursor: pointer;
+}
+
+#buttonHolder img:hover { opacity: .5; }
