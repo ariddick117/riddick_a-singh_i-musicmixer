@@ -1,5 +1,6 @@
 
 (() => {
+
 	// set up the puzzle pieces and boards
 	console.log('fired');
 	//const is constant  
@@ -46,3 +47,4 @@ function switchImage(){
 	})
 
 })();
+
