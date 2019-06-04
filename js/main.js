@@ -1,7 +1,5 @@
 (() => {
-  // this is a self invoking anonymous function
-  //also called a
+  // stub
   console.log('working');
-})();
 
-print "working";
+})();
