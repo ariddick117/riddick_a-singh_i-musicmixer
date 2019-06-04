@@ -4,10 +4,47 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel ="stylesheet" href = "css/reset.css">
+  <link rel ="stylesheet" href ="css/main.css">
   <title>Document</title>
 </head>
 <body>
-  <h1>my awesome music mixer project</h1>
+
+	<header id="headLine">
+		
+		<h1>My awesome music mixer project</h1>
+		<p>subhead</p>
+	</header>
+	<section id="game-boards">
+		<h2 class="hidden">The Game Board</h2>
+		<div class="droppieces">
+			<h3 class="hidden">The Drag Zone</h3>
+			<img id ="piece0"src="" alt="top right" class="mixer-image" draggable>
+			<img id ="piece1"src="" alt="top left" class="mixer-image" draggable>
+			<img id ="piece2"src="" alt="bottom right" class="mixer-image" draggable>
+			<img id ="piece3"src="" alt="bottom left" class="mixer-image" draggable>
+		</div>
+		<div class="dropping-area">
+			<h3 class="hidden">The Drop Zones</h3>
+			<!----setup drop zone--->
+			<div class="drop-zone tl"></div>
+			<div class="drop-zone tr"></div>
+			<div class="drop-zone bl"></div>
+			<div class="drop-zone  br" ></div>
+		</div>
+	</section>
+
+	<footer>
+		<!-- <h2 class="hidden">Switch the Puzzle</h2> -->
+		<p>click thumb to change pieces!</p>
+		<nav id="buttonHolder">
+			<h3 class="hidden">Select Image</h3>
+			<img data-puzzleref= "0" src ="" alt="thumbnail">
+			<img data-puzzleref= "1" src ="" alt="thumbnail">
+	    	<img data-puzzleref= "2" src="" alt="thumbnail">
+			<img data-puzzleref= "3" src= "" alt="thumbnail">
+		</nav>
+	</footer>
 
   <script src="js/main.js"></script>
 </body>
