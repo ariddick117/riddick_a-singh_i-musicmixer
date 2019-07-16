@@ -43,12 +43,17 @@ body {
 	margin-top: 40px;
 	height: 400px;
 	display: inline-block;
-	background-color: #000;
+	background-color: #fff;
 	color: inherit;
 	overflow: hidden;
 }
 
 .droppieces { width: 500px; margin-right: 150px; margin-left:150px;  }
+
+
+
+
+
 
 .dropping-area { width: 100%; }
 
@@ -61,7 +66,7 @@ body {
 
 /* arrange the puzzle pieces on the board */
 
-/*.mixer-image:nth-child(even){
+.mixer-image:nth-child(even){
 	float:right;
 	clear: both;
 }
@@ -69,29 +74,31 @@ body {
 	float:left;
 	clear: both;
 }
-/*
+
 .tl, .br{text-align: right;}
 .tr img {bottom:0;}
 .tl img {bottom:0; right:0;}
 .bl img{right:0;}
 
-*/
+
 
 /* set up drop zones */
-.mixer-imagerow1
-{
-	flex-direction:row;
-}
+
+
 .drop-zone
 {
 	
 	
-	float:left;
-	position:relative;
+	width: 25%;
+	height: 50%;
+	border: thin dashed black;
+	float: left;
+position: relative;
+
 }
 .drop-zone img
 {
-	width:auto !important;
+	width:100px !important;
 	padding:0 !important;
 	cursor: default;
 	position: absolute;
