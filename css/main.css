@@ -55,7 +55,11 @@ body {
 
 
 
-.dropping-area { width: 100%; }
+.dropping-area { width: 100%; height:511px; background-image:url("../images/landscape.jpg");
+background-repeat: no-repeat;
+background-position: left top;
+background-size: cover;
+}
 
 .mixer-image {
 	width: 40%;
@@ -91,7 +95,6 @@ body {
 	
 	width: 25%;
 	height: 50%;
-	border: thin dashed black;
 	float: left;
 position: relative;
 
