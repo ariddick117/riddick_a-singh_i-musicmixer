@@ -7,13 +7,18 @@
 
   <link rel ="stylesheet" href = "css/reset.css">
   <link rel ="stylesheet" href ="css/main.css">
-  <title>Document</title>
+  <title>Explore Grey Bruce</title>
 </head>
 <body>
 <main class ="container">
-	<header>
+	<header class="mainHeader">
 		
-		<h1>Explore Grey-Bruce County</h1>
+		<div class="logoHeader">
+			<h1 class="hidden">logo</h1>
+			<img src="images/Grey_County_logo.svg" alt="mainLogo" class="Logo">
+		</div>
+		
+		
 		
 	</header>
 	<section id="game-boards">
@@ -21,12 +26,11 @@
 		<div class="dropping-area">
 			<h3 class="hidden">The Drop Zones</h3>
 			<!----setup drop zone--->
-			<div class="drop-zone"></div>
-			<div class="drop-zone"></div>
-			<div class="drop-zone"></div>
-			<div class="drop-zone"></div>
-			<div class="drop-zone"></div>
-			<div class="drop-zone"></div>
+			<div class="drop-zone z1"></div>
+			<div class="drop-zone z2"></div>
+			<div class="drop-zone z3"></div>
+			<div class="drop-zone z4"></div>
+			
 
 		</div>
 	</section>
@@ -36,30 +40,28 @@
 			<img id ="piece0"src="images/silhouette/png/riddick_a-icons-silhouettes_goldfinch.png" alt="top right"   class="mixer-image" draggable>
 			<img id ="piece1"src="images/silhouette/png/riddick_a-icons-silhouettes_raven.png"  alt="top left"    class="mixer-image" draggable>
 			<img id ="piece2"src="images/silhouette/png/riddick_a-icons-silhouettes_canada_goose.png" alt="bottom right" class="mixer-image" draggable>
-			<img id ="piece3"src="" alt="bottom left" class="mixer-image" draggable>
-			<img id ="piece4"src="" alt="bottom left" class="mixer-image" draggable>
-			<img id ="piece5"src="" alt="bottom left" class="mixer-image" draggable>
-			<img id ="piece6"src="" alt="bottom left" class="mixer-image" draggable>
-			<img id ="piece7"src="" alt="bottom left" class="mixer-image " draggable>
-			<img id ="piece8"src="" alt="bottom left" class="mixer-image" draggable> 
+			<img id ="piece3"src="images/silhouette/png/riddick_a-icons-silhouettes_goldfinch.png" alt="bottom left" class="mixer-image" draggable>
+			 
 		</div>
 		<div id ="buttons">
 		<!-- <h2 class="hidden">Switch the Puzzle</h2> -->
 		<p>Choose the time!</p>
 		<nav id="buttonHolder">
 			<h3 class="hidden">Select Image</h3>
-			<button>Morning</button>
-			<button>Afternoon</button>
-			<button>Night</button>
+			<button class="b1 B"></button>
+			<button class="b2 B"></button>
+			<button class="b3 B"></button>
 		</nav></div>
 		<div class="droppieces">
 			<h3 class="hidden">The Drag Zone</h3>
-			<img id ="weather0" src="images/silhouette/png/riddick_a-icons-silhouettes_wind.png" alt="top right" class="mixer-image" draggable>
-			<img id ="weather1" src="images/silhouette/png/riddick_a-icons-silhouettes_thunderstorm.png" alt="top left" class="mixer-image" draggable>
-			<img id ="weather2" src="images/silhouette/png/riddick_a-icons-silhouettes_raindrop.png" alt="bottom right" class="mixer-image" draggable>
-			
+			<img id ="piece9"src="images/silhouette/png/riddick_a-icons-silhouettes_wind.png" alt="top right" class="mixer-image" draggable>
+			<img id ="piece10"src="images/silhouette/png/riddick_a-icons-silhouettes_thunderstorm.png" alt="top left" class="mixer-image" draggable>
+			<img id ="piece11"src="images/silhouette/png/riddick_a-icons-silhouettes_raindrop.png" alt="bottom right" class="mixer-image" draggable>
+			<img id ="piece11"src="images/silhouette/png/riddick_a-icons-silhouettes_sun.png" alt="bottom right" class="mixer-image" draggable>
+=======
+
 		</div>
-	</section>
+	</section>	
 		
 	</main>
   <script src="js/main.js"></script>

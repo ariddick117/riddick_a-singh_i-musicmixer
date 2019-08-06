@@ -7,6 +7,7 @@
 		puzzleBoard = document.querySelector('.game-boards'),
 		//puzzleSelectors = document.querySelectorAll('#buttonHolder img'),
 		dropZones = document.querySelectorAll('.drop-zone');
+		
 
 	let  draggablePieces = piecesBoard.querySelectorAll("img");
 
