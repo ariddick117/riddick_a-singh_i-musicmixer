@@ -4,56 +4,56 @@
 
 	// const is short for Constant -> variables that shouldn't change
 	const piecesBoard = document.querySelector('.droppieces'),
-		puzzleBoard = document.querySelector('.game-boards'),
-		//puzzleSelectors = document.querySelectorAll('#buttonHolder img'),
+		puzzleBoard = document.querySelector('.dropping-area'),
+		puzzleSelectors = document.querySelectorAll('#buttonHolder img'),
 		dropZones = document.querySelectorAll('.drop-zone');
 		
 
 	let  draggablePieces = piecesBoard.querySelectorAll("img");
 
 	// arrays are indexed and start at zero
-	//const imageNameArray = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
+	const imageNameArray = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
 	//debugger;
 	
-	//function switchImage() {
-		//console.log(this);
+	function switchImage() {
+		console.log(this);
 
 		// grab the corresponding background image and get it from the images folder
 		// backGround.jpg as an example
 
-		//let bgImage = `./images/backGround${this.dataset.puzzleref}.jpg`;
+		let bgImage = `./images/landScape${this.dataset.puzzleref}.png`;
 
 
 		// Set the background image style on the dropzone container	
-		//puzzleBoard.style.backgroundImage = `url(${bgImage})`;
+		puzzleBoard.style.backgroundImage = `url(${bgImage})`;
 
 		// check for stragglers
-		//dropZones.forEach(zone => {
+			dropZones.forEach(zone => {
 			// if a zone has a child, grab it and put it back on the left-hand side
-			//if (zone.childElementCount == 1) {
-				//piece = zone.firstElementChild;
-				//piecesBoard.appendChild(piece);
-			//}
-		//});
+			if (zone.childElementCount == 1) {
+				piece = zone.firstElementChild;
+				piecesBoard.appendChild(piece);
+			}
+		});
 
 
 		// Switching the right-hand images so that they match the bottom background
 
-		//draggablePieces.forEach((image, index) => {
+		draggablePieces.forEach((image, index) => {
 			// log the image and the current index
-			//console.log(image, index);
+			console.log(image, index);
 
 			// Change each image source
-			//image.src = `images/${imageNameArray[index]}${this.dataset.puzzleref}.jpg`;
+			image.src = `images/silhouette/png/${imageNameArray[index]}${this.dataset.puzzleref}.png`;
 
 	// debugger;
 
-		//});
-	//}
+		});
+	}
 
 
-	//puzzleSelectors.forEach(thumbnail => { thumbnail.addEventListener("click", switchImage); });
+	puzzleSelectors.forEach(thumbnail => { thumbnail.addEventListener("click", switchImage); });
 
 	// querySelectorAll selects all things that use that tag
 	// the word "button" is a placeholder

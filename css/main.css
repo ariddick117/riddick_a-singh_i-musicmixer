@@ -28,6 +28,7 @@ body {
 {
 	display: flex;
 	flex-direction: row;
+	background-color:#000;
 }
 .logoHeader
 {
@@ -59,6 +60,8 @@ body {
 	height: 400px;
 	display: inline-block;
 	background-color: #fff;
+	border:thin black solid;
+	border-radius:20px;
 	color: inherit;
 	overflow: hidden;
 }
@@ -71,7 +74,7 @@ body {
 
 
 .dropping-area { width:1000px; 
-background-image: url(../images/landscape.png);
+background-image: url(../images/landScape0.png);
 margin:auto;
 margin-top:50px;
 =======
@@ -100,20 +103,22 @@ margin-top:50px;
 
 .drop-zone 
 {
-	
-	
 	width: 100px;
 	height: 100px;
 	margin-left:100px;
-	background-color:#fff;
+	background-color:#000;
+	
+	
 }
-=======
 
 .z1
 {
 position:absolute;
-margin-left:100px;
-margin-top:200px;
+margin-left:620px;
+margin-top:250px;
+opacity:0.3;
+	 border-radius: 100px / 50px;
+
 }
 
 .z2
@@ -121,15 +126,26 @@ margin-top:200px;
 	position:absolute;
 	margin-left: 400px;
 	margin-top: 150px;
+	opacity:0.3;
+	 border-radius: 100px / 50px;
 }
 
 .z3
 {
 position:absolute;
 	margin-left: 800px;
-	margin-top:230px;
+	margin-top:150px;
+	opacity:0.3;
+	 border-radius: 100px / 50px;
 }
-
+.z4
+{
+	position:absolute;
+	margin-left: 100px;
+	margin-top: 160px;
+	opacity:0.3;
+	 border-radius: 100px / 50px;
+}
 .drop-zone img
 {
 	width:100px !important;
@@ -183,6 +199,7 @@ footer {
 	margin-left: 5px;
 	margin-right: 5px;
 	border-radius: 20px;
+	border:thin black solid;
 	cursor: pointer;
 
 }
@@ -190,19 +207,14 @@ footer {
 {
 	width:100px;
 	height:100px;
-	background-image: url(../images/icons-colour/svg/riddick_a-icons_sun.svg);
-	background-color:transparent;
-	border:transparent;
 	filter:grayscale(100%);
+
 }
 
 .b2
 {
 	width:100px;
 	height:100px;
-	background-image: url(../images/icons-colour/svg/riddick_a-icons_sunset.svg);
-	background-color:transparent;
-	border:transparent;
 	filter:grayscale(100%);
 }
 
@@ -210,9 +222,6 @@ footer {
 {
 	width:100px;
 	height:100px;
-	background-image: url(../images/icons-colour/svg/riddick_a-icons_moon.svg);
-	background-color:transparent;
-	border:transparent;
 	filter:grayscale(100%);
 }
 
