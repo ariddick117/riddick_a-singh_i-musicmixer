@@ -95,6 +95,7 @@ background-size: cover;
 	
 	width: 25%;
 	height: 50%;
+	border:thin solid black;
 	float: left;
 position: relative;
 
