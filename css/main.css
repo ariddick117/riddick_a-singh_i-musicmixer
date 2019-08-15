@@ -7,7 +7,13 @@
 }
 @charset "utf-8";
 /* CSS Document */
-body {
+.hidden 
+{ 
+	display: none 
+}
+
+body 
+{
 	background-image: url(../);
 	background-repeat: repeat;
 	background-color: #333;
@@ -15,148 +21,8 @@ body {
 	font-size: 16px;
 }
 
-.container
+header 
 {
-	width:1280px;
-	height: auto;
-	margin:auto;
-	background-color:#666666;
-}
-
-.hidden { display: none }
-.mainHeader
-{
-	display: flex;
-	flex-direction: row;
-	background-color:#000;
-}
-.logoHeader
-{
-	padding:0;
-}
-.Logo
-{
-	width:210px;
-	height:auto;
-	
-}
-
-#game-boards {  
-	display:flex; 
-	flex-direction:row;
-	
-	 text-align: center; }
-#dragging-area
-{
-	display:flex;
-	flex-direction:row;
-	flex-wrap:nowrap;
-	justify-content: space-between;
-	background-color:#666666;
- }
-
-.droppieces, .dropping-area{
-	margin-top: 40px;
-	height: 400px;
-	display: inline-block;
-	background-color: #fff;
-	border:thin black solid;
-	border-radius:20px;
-	color: inherit;
-	overflow: hidden;
-}
-
-.droppieces { width: 500px; height:auto; margin-right: 150px; margin-left:150px;  }
-
-
-
-
-
-
-.dropping-area { width:1000px; 
-background-image: url(../images/landScape0.png);
-margin:auto;
-margin-top:50px;
-=======
-
-}
-.mixer-image {
-	width: 40%;
-	display:inline-block;
-	padding: 8px;
-	cursor: pointer;
-}
-
-/* arrange the puzzle pieces on the board */
-
-
-
-.tl, .br{text-align: right;}
-.tr img {bottom:0;}
-.tl img {bottom:0; right:0;}
-.bl img{right:0;}
-
-
-
-/* set up drop zones */
-
-
-.drop-zone 
-{
-	width: 100px;
-	height: 100px;
-	margin-left:100px;
-	background-color:#000;
-	
-	
-}
-
-.z1
-{
-position:absolute;
-margin-left:620px;
-margin-top:250px;
-opacity:0.3;
-	 border-radius: 100px / 50px;
-
-}
-
-.z2
-{
-	position:absolute;
-	margin-left: 400px;
-	margin-top: 150px;
-	opacity:0.3;
-	 border-radius: 100px / 50px;
-}
-
-.z3
-{
-position:absolute;
-	margin-left: 800px;
-	margin-top:150px;
-	opacity:0.3;
-	 border-radius: 100px / 50px;
-}
-.z4
-{
-	position:absolute;
-	margin-left: 100px;
-	margin-top: 160px;
-	opacity:0.3;
-	 border-radius: 100px / 50px;
-}
-.drop-zone img
-{
-	width:100px !important;
-	padding:0 !important;
-	cursor: default;
-	position: absolute;
-}
-/* end board styles */
-
-
-header {
 	padding:0;
 	position: relative;
 	top: 20px;
@@ -165,67 +31,203 @@ header {
 	margin: 0px auto;
 	text-align: center;
 	background-color:#cdcdcd;
-
-
 }
 
-header h1 {
+header h1 
+{
 	font-size: 3.25em;
   	letter-spacing: 3px;
 	margin: 10px 0;
-	color:#000;
+	color: #000;
 }
 
-header p, footer p { 
+header p, footer p 
+{ 
 	font-size: 1.7em; 
 	letter-spacing: 2px; 
 	margin: 10px 0 
 }
 
-footer {
+footer 
+{
 	position: relative;
 	width: 600px;
 	margin: 65px auto 0;
 	text-align: center;
 }
 
-#buttonHolder { 
-	display:flex;
-	flex-direction:column;
-	margin-top:70px;
-	text-align: center; }
+.container
+{
+	width: 1280px;
+	height: auto;
+	margin: auto;
+	background-color: #666666;
+}
+
+/* Header */
+.mainHeader
+{
+	display: flex;
+	flex-direction: row;
+	background-color:#000;
+}
+
+.logoHeader
+{
+	padding: 0;
+}
+
+.Logo
+{
+	width: 210px;
+	height: auto;
+}
+
+
+/* Board Styles Start */
+/* Drag/Drop Area */
+#game-boards 
+{  
+	display:flex; 
+	flex-direction:row;
+	text-align: center;
+}
+
+#dragging-area
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	background-color: #666666;
+ }
+
+.droppieces, .dropping-area
+{
+	margin-top: 40px;
+	height: 400px;
+	display: inline-block;
+	background-color: #fff;
+	border: thin black solid;
+	border-radius: 20px;
+	color: inherit;
+	overflow: hidden;
+}
+
+.droppieces 
+{ 
+	width: 500px; 
+	height:auto; 
+	margin-right: 150px; 
+	margin-left:150px;  
+}
+
+
+.dropping-area 
+{ 
+	width: 1000px; 
+	background-image: url(../images/landScape0.png);
+	margin: auto;
+	margin-top: 50px;
+}
+
+.mixer-image 
+{
+	width: 40%;
+	display: inline-block;
+	padding: 8px;
+	cursor: pointer;
+}
+
+
+/* Arranging the Puzzle Pieces on the Board */
+.tl, .br { text-align: right;}
+.tr img { bottom: 0;}
+.tl img { bottom: 0; right: 0;}
+.bl img { right: 0;}
+
+
+
+/* Setting Up Drop Zones */
+.drop-zone 
+{
+	width: 100px;
+	height: 100px;
+	margin-left: 100px;
+	background-color: #000;
+}
+
+.z1
+{
+	position: absolute;
+	margin-left: 620px;
+	margin-top: 250px;
+	opacity: 0.3;
+	border-radius: 100px / 50px;
+}
+
+.z2
+{
+	position:absolute;
+	margin-left: 400px;
+	margin-top: 150px;
+	opacity: 0.3;
+	border-radius: 100px / 50px;
+}
+
+.z3
+{
+	position:absolute;
+	margin-left: 800px;
+	margin-top: 150px;
+	opacity: 0.3;
+	border-radius: 100px / 50px;
+}
+
+.z4
+{
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 160px;
+	opacity: 0.3;
+	border-radius: 100px / 50px;
+}
+
+.drop-zone img
+{
+	width: 100px !important;
+	padding: 0 !important;
+	cursor: default;
+	position: absolute;
+}
+/* End Board Styles */
+
+
+/* Center Panel Styles */
+#buttonHolder 
+{ 
+	display: flex;
+	flex-direction: column;
+	margin-top: 70px;
+	text-align: center; 
+}
 
 #buttonHolder  {
 	margin-left: 5px;
 	margin-right: 5px;
 	border-radius: 20px;
-	border:thin black solid;
+	border: thin black solid;
 	cursor: pointer;
 
 }
-.b1
+.b1, .b2, .b3
 {
-	width:100px;
-	height:100px;
-	filter:grayscale(100%);
-
-}
-
-.b2
-{
-	width:100px;
-	height:100px;
-	filter:grayscale(100%);
-}
-
-.b3
-{
-	width:100px;
-	height:100px;
-	filter:grayscale(100%);
+	width: 100px;
+	height: 100px;
+	filter: grayscale(100%);
 }
 
 .B:hover
 {
-filter:grayscale(0%);
+	filter: grayscale(0%);
 }
