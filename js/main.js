@@ -6,7 +6,10 @@
 	const piecesBoard = document.querySelector('.droppieces'),
 		puzzleBoard = document.querySelector('.dropping-area'),
 		puzzleSelectors = document.querySelectorAll('#buttonHolder img'),
-		dropZones = document.querySelectorAll('.drop-zone');
+		dropZones = document.querySelectorAll('.drop-zone'),
+		helpButton = document.querySelector('.help'),
+		lightBox = document.querySelector('.lightbox'),
+		closeButton = document.querySelector('.close-lightbox');
 		
 
 	let  draggablePieces = piecesBoard.querySelectorAll("img");
@@ -53,6 +56,25 @@
 	}
 
 
+// LightBox Controls
+	
+	function popLightBox() {
+		// make the lightbox show up
+		lightBox.classList.add('show-lightbox');
+
+		console.log("Popping Da Lightbox");
+	}
+
+	function closeLightBox(event) {
+	event.preventDefault(); // e and event mean the same thing. they are event handlers
+
+	lightBox.classList.remove('show-lightbox');
+	console.log("Lightbox Down! Lightbox Down!");
+
+	}
+
+
+	// switch images
 	puzzleSelectors.forEach(thumbnail => { thumbnail.addEventListener("click", switchImage); });
 
 	// querySelectorAll selects all things that use that tag
@@ -100,5 +122,6 @@
 		});
 	})
 
-	// all of the console.log are used to make sure your code isn't breaking! Then if they do break, you know where
+	helpButton.addEventListener("click", popLightBox);
+	closeButton.addEventListener("click", closeLightBox);
 })();

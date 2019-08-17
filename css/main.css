@@ -1,11 +1,5 @@
-/*this is just a dummy css file to start with/*
-.hidden
+/*@charset "utf-8";*/
 
-.placeholder
-{
- color: #fff;
-}
-@charset "utf-8";
 /* CSS Document */
 .hidden 
 { 
@@ -19,6 +13,7 @@ body
 	background-color: #333;
 	color: #FFF;
 	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
 }
 
 header 
@@ -208,7 +203,7 @@ footer
 { 
 	display: flex;
 	flex-direction: column;
-	margin-top: 70px;
+	margin-top: 50px;
 	text-align: center; 
 }
 
@@ -230,4 +225,60 @@ footer
 .B:hover
 {
 	filter: grayscale(0%);
+}
+
+/*Lightbox Styles*/
+.help
+{
+	margin-top: 40px;
+	border: thin black solid;
+	border-radius: 10px;
+	background-color: yellow;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.help:hover
+{
+	cursor: pointer;
+	filter: grayscale(80%);
+}
+
+.lightbox
+{
+	width: 100%;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	background-color: rgba(0,0,0,0.8);
+	display: none;
+}
+
+.how-to-play
+{
+	display: block;
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 150px;
+}
+
+.how-to-play img
+{
+	width: 100px;
+}
+
+.show-lightbox 
+{ 
+	display: block; 
+}
+
+.close-lightbox 
+{ 
+	display: block; 
+	float: right;
+	color: white;
+	margin-right: 60px;
+	margin-top: 10px;
+	font-family: sans-serif;
+	text-decoration: none;
 }
