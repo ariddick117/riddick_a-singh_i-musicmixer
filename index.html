@@ -10,60 +10,75 @@
   <title>Explore Grey Bruce</title>
 </head>
 <body>
-<main class ="container">
-	<header class="mainHeader">
+	<main class ="container">
+		<header class="mainHeader">
 		
-		<div class="logoHeader">
-			<h1 class="hidden">logo</h1>
-			<img src="images/Grey_County_logo.svg" alt="mainLogo" class="Logo">
-		</div>
-		
-		
-		
-	</header>
-	<section id="game-boards">
-		<h2 class="hidden">The drop-zones</h2>
-		<div class="dropping-area">
-			<h3 class="hidden">The Drop Zones</h3>
-			<!----setup drop zone--->
-			<div class="drop-zone z1"></div>
-			<div class="drop-zone z2"></div>
-			<div class="drop-zone z3"></div>
-			<div class="drop-zone z4"></div>
-			
+			<div class="logoHeader">
+				<h1 class="hidden">logo</h1>
+				<img src="images/Grey_County_logo.svg" alt="mainLogo" class="Logo">
+			</div>	
+		</header>
 
-		</div>
-	</section>
+		<section id="game-boards">
+			<h2 class="hidden">The drop-zones</h2>
+			<div class="dropping-area">
+				<h3 class="hidden">The Drop Zones</h3>
+				<!----setup drop zone--->
+				<div class="drop-zone z1"></div>
+				<div class="drop-zone z2"></div>
+				<div class="drop-zone z3"></div>
+				<div class="drop-zone z4"></div>
+			</div>
+		</section>
+
 		<section id ="dragging-area">
-		<div class="droppieces">
-			<h3 class="hidden">The Drag Zone</h3>
-			<img id ="piece0"src="images/silhouette/png/topLeft0.png" alt="top left" class="mixer-image" draggable>
-			<img id ="piece1"src="images/silhouette/png/topRight0.png"  alt="top right" class="mixer-image" draggable>
-			<img id ="piece2"src="images/silhouette/png/bottomLeft0.png" alt="bottom  left" class="mixer-image" draggable>
-			<img id ="piece3"src="images/silhouette/png/bottomRight0.png" alt="bottom right" class="mixer-image" draggable>
-			 
-		</div>
-		<div id ="buttons">
-		<!-- <h2 class="hidden">Switch the Puzzle</h2> -->
-		
-		<nav id="buttonHolder">
-			<h3 class="hidden">Select Image</h3>
-			<h1>Choose the time!</h1>
-			<img data-puzzleref= "0" src="images/icons-colour/svg/riddick_a-icons_sun.svg" alt="thumbnail" class="b1 B">
-			<img data-puzzleref= "1" src="images/icons-colour/svg/riddick_a-icons_sunset.svg" alt="thumbnail" class="b2 B">
-	    	<img  data-puzzleref= "2" src="images/icons-colour/svg/riddick_a-icons_moon-white.svg" alt="thumbnail" class="b3 B">
-		</nav></div>
-		<div class="droppieces">
-			<h3 class="hidden">The Drag Zone</h3>
-			<img id ="piece9"src="images/silhouette/svg/riddick_a-icons-silhouettes_wind.svg" alt="top right" class="mixer-image" draggable>
-			<img id ="piece10"src="images/silhouette/svg/riddick_a-icons-silhouettes_thunderstorm.svg" alt="top left" class="mixer-image" draggable>
-			<img id ="piece11"src="images/silhouette/svg/riddick_a-icons-silhouettes_raindrop.svg" alt="bottom right" class="mixer-image" draggable>
-			<img id ="piece11"src="images/silhouette/svg/riddick_a-icons-silhouettes_sun.svg" alt="bottom right" class="mixer-image" draggable>
+			<div class="droppieces">
+				<h3 class="hidden">The Drag Zone</h3>
+				<img id ="piece0"src="images/silhouette/png/topLeft0.png" alt="top left" class="mixer-image" draggable>
+				<img id ="piece1"src="images/silhouette/png/topRight0.png"  alt="top right" class="mixer-image" draggable>
+				<img id ="piece2"src="images/silhouette/png/bottomLeft0.png" alt="bottom  left" class="mixer-image" draggable>
+				<img id ="piece3"src="images/silhouette/png/bottomRight0.png" alt="bottom right" class="mixer-image" draggable>
+			</div>
 
-		</div>
-	</section>	
+			<div id ="buttons">
+			<!-- <h2 class="hidden">Switch the Puzzle</h2> -->
+				<button class="help">How to Play!</button>
+				<nav id="buttonHolder">
+					<h3 class="hidden">Select Image</h3>
+					<h1>Choose the time!</h1>
+					<img data-puzzleref= "0" src="images/icons-colour/svg/riddick_a-icons_sun.svg" alt="thumbnail" class="b1 B">
+					<img data-puzzleref= "1" src="images/icons-colour/svg/riddick_a-icons_sunset.svg" alt="thumbnail" class="b2 B">
+	    			<img  data-puzzleref= "2" src="images/icons-colour/svg/riddick_a-icons_moon-white.svg" alt="thumbnail" class="b3 B">
+				</nav>
+			</div>
+
+			<div class="droppieces">
+				<h3 class="hidden">The Drag Zone</h3>
+				<img id ="piece9"src="images/silhouette/svg/riddick_a-icons-silhouettes_wind.svg" alt="top right" class="mixer-image" draggable>
+				<img id ="piece10"src="images/silhouette/svg/riddick_a-icons-silhouettes_thunderstorm.svg" alt="top left" class="mixer-image" draggable>
+				<img id ="piece11"src="images/silhouette/svg/riddick_a-icons-silhouettes_raindrop.svg" alt="bottom right" class="mixer-image" draggable>
+				<img id ="piece11"src="images/silhouette/svg/riddick_a-icons-silhouettes_sun.svg" alt="bottom right" class="mixer-image" draggable>
+			</div>
+		</section>	
 		
+		<section class="lightbox">
+        	<a href="#" class="close-lightbox">X</a>
+			<!-- <img src="images/grey_county_pretty.jpg" alt="Beautiful Wetlands of Grey County">-->        	
+				<p class="how-to-play">Welcome to the beautiful walking trails of Grey County, Ontario. Even while at home in the city, at your work desk, or even just on vacation elsewhere in the world, Grey County has a sound like no other.
+        		<br>
+        		<br>
+In order to make you feel at home wherever you go, simply choose a time of day from the center panel to display the various animals that one might find. Drag one of the animal icons to reveal the elaborate colours and make the calls play through.
+<br>
+<br>
+Everyone knows that no outdoor experience is complete without random weather changes! By dragging a weather icon from the right panel onto the top right dropzone, you overlay the animal sounds with general ambience of a thunderstorm, high wind, rain, or you can stick with calm weather.
+<br>
+<br>
+The choices are yours in the Grey County soundboard. Yours to discover.
+</p>
+    	</section>
+
 	</main>
+
   <script src="js/main.js"></script>
 
 </body>
