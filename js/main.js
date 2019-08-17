@@ -9,7 +9,8 @@
 		dropZones = document.querySelectorAll('.drop-zone'),
 		helpButton = document.querySelector('.help'),
 		lightBox = document.querySelector('.lightbox'),
-		closeButton = document.querySelector('.close-lightbox');
+		closeButton = document.querySelector('.close-lightbox'),
+		changeImage = document.querySelector('.drop-zone img');
 		
 
 	let  draggablePieces = piecesBoard.querySelectorAll("img");
@@ -121,6 +122,12 @@
 			e.target.appendChild(document.querySelector(`#${draggedElement}`));
 		});
 	})
+
+
+			//changing image source on drop
+
+
+
 
 	helpButton.addEventListener("click", popLightBox);
 	closeButton.addEventListener("click", closeLightBox);
