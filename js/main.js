@@ -138,6 +138,6 @@
 
 	helpButton.addEventListener("click", popLightBox); 
 	closeButton.addEventListener("click", closeLightBox);
-  weatherButton.forEach(Piece => Piece.addEventListener("click", addingWeatherSound));
+  weatherButton.addEventListener("click", addingWeatherSound);
 
 })();
