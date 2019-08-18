@@ -97,7 +97,7 @@ footer
 	background-color: #666;
  }
 
-.droppieces, .dropping-area
+.droppieces, .dropping-area, .weatherPieces
 {
 	margin-top: 40px;
 	height: 400px;
@@ -109,7 +109,7 @@ footer
 	overflow: hidden;
 }
 
-.droppieces 
+.droppieces, .weatherPieces
 { 
 	width: 500px; 
 	height:auto; 
@@ -192,6 +192,7 @@ footer
 {
 	width: 100px !important;
 	padding: 0 !important;
+	opacity: 6.5 !important;
 	cursor: default;
 	position: absolute;
 }
