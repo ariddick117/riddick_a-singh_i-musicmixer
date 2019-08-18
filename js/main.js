@@ -10,13 +10,15 @@
 		helpButton = document.querySelector('.help'),
 		lightBox = document.querySelector('.lightbox'),
 		closeButton = document.querySelector('.close-lightbox'),
+		animalSounds = document.querySelector('.animal-audio'),
 		changeImage = document.querySelector('.drop-zone img');
 		
 
-	let  draggablePieces = piecesBoard.querySelectorAll("img");
+	let draggablePieces = piecesBoard.querySelectorAll("img");
 
 	// arrays are indexed and start at zero
 	const imageNameArray = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
+		  audioNameArray = ["topLeft", "topRight", "bottomLeft", "bottomRight"];
 
 	//debugger;
 	
@@ -38,6 +40,9 @@
 			if (zone.childElementCount == 1) {
 				piece = zone.firstElementChild;
 				piecesBoard.appendChild(piece);
+
+
+				animalSounds.play();
 			}
 		});
 
@@ -122,9 +127,29 @@
 			e.target.appendChild(document.querySelector(`#${draggedElement}`));
 		});
 	})
-
-
 			//changing image source on drop
+
+
+	// Audio
+
+	function playSound() {
+		animalSounds.play();
+
+	}
+   	// var path = "audio/animals/${audioNameArray[index]}${this.dataset.puzzleref}.mp3"
+    //         function playSound(path) {
+    //             var sound = new Audio(path);
+    //             sound.play();
+
+    // 			console.log("Audio Loaded");
+    // }
+
+    // animalSounds.addEventListener("drop", function() {
+    //   document.body.removeChild(animalSounds);
+    // })
+
+    // document.body.appendChild(animalSounds);
+    // animalSounds.play();
 
 
 
