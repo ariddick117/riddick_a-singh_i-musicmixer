@@ -34,10 +34,10 @@
 		<section id ="dragging-area">
 			<div class="droppieces">
 				<h3 class="hidden">The Drag Zone</h3>
-				<img id ="piece0"src="images/silhouette/png/topLeft0.png" alt="top left" class="mixer-image" draggable>
-				<img id ="piece1"src="images/silhouette/png/topRight0.png"  alt="top right" class="mixer-image" draggable>
-				<img id ="piece2 "src="images/silhouette/png/bottomLeft0.png" alt="bottom  left" class="mixer-image" draggable>
-				<img id ="piece3 "src="images/silhouette/png/bottomRight0.png" alt="bottom right" class="mixer-image" draggable>
+				<img id ="piece0"src="images/icons-colour/png/topLeft0.png" alt="top left" class="mixer-image" draggable>
+				<img id ="piece1"src="images/icons-colour/png/topRight0.png"  alt="top right" class="mixer-image" draggable>
+				<img id ="piece2"src="images/icons-colour/png/bottomLeft0.png" alt="bottom  left" class="mixer-image" draggable>
+				<img id ="piece3"src="images/icons-colour/png/bottomRight0.png" alt="bottom right" class="mixer-image" draggable>
 			</div>
 
 			<div id ="buttons">
@@ -52,12 +52,12 @@
 				</nav>
 			</div>
 
-			<div class="droppieces">
+			<div class="weatherPieces">
 				<h3 class="hidden">The Drag Zone</h3>
-				<img id ="piece9"src="images/silhouette/svg/riddick_a-icons-silhouettes_wind.svg" alt="top right" class="mixer-image" draggable>
-				<img id ="piece10"src="images/silhouette/svg/riddick_a-icons-silhouettes_thunderstorm.svg" alt="top left" class="mixer-image" draggable>
-				<img id ="piece11"src="images/silhouette/svg/riddick_a-icons-silhouettes_raindrop.svg" alt="bottom right" class="mixer-image" draggable>
-				<img id ="piece11"src="images/silhouette/svg/riddick_a-icons-silhouettes_sun.svg" alt="bottom right" class="mixer-image" draggable>
+				<img id ="piece9" data-weatheref ="0" src="images/silhouette/png/weather_wind.png" alt="top right" class="mixer-image" >
+				<img id ="piece10" data-weatheref ="1" src="images/silhouette/png/weather_thunderStorm.png" alt="top left" class="mixer-image">
+				<img id ="piece11" data-weatheref ="2"src="images/silhouette/png/weather_raindrop.png" alt="bottom right" class="mixer-image">
+				<img id ="piece11" data-weatheref ="3"src="images/silhouette/png/weather_sun.png" alt="bottom right" class="mixer-image">
 			</div>
 		</section>	
 		
@@ -77,7 +77,9 @@
 				The choices are yours in the Grey County soundboard. Yours to discover.
 			</p>
     	</section>
-
+    	<audio  class="weatherAudio">
+  <source src="audio/weather/weather0.mp3" type="audio/mp3">
+</audio>
 	</main>
 
   <script src="js/main.js"></script>
