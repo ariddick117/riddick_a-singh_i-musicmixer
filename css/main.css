@@ -301,3 +301,10 @@ footer
 	font-family: sans-serif;
 	text-decoration: none;
 }
+
+
+/*Audio*/
+.animal-audio
+{
+	display: none;
+}
