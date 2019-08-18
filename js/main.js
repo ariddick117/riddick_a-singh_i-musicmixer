@@ -10,8 +10,8 @@
 		helpButton = document.querySelector('.help'),
 		lightBox = document.querySelector('.lightbox'),
 		closeButton = document.querySelector('.close-lightbox'),
-		changeImage = document.querySelector('.drop-zone img');
-		
+		WeatherAmbience = document.querySelector('.weatherAudio'),
+    weatherButton = document.querySelector('weatherPieces img');
 
 	let  draggablePieces = piecesBoard.querySelectorAll("img");
 
@@ -49,7 +49,7 @@
 			console.log(image, index);
 
 			// Change each image source
-			image.src = `images/silhouette/png/${imageNameArray[index]}${this.dataset.puzzleref}.png`;
+			image.src = `images/icons-colour/png/${imageNameArray[index]}${this.dataset.puzzleref}.png`;
 
 	// debugger;
 
@@ -73,6 +73,19 @@
 	console.log("Lightbox Down! Lightbox Down!");
 
 	}
+
+  function addingWeatherSound(){
+    let audioPath= `audio/weather/weather${this.data-weatheref}.mp3`;
+    weatherAmbience.src = audioPath;
+    weatherAmbience.load();
+
+    weatherAmbience.play();
+    //grab a reference to the current video via the classname object
+  }
+
+  
+
+
 
 
 	// switch images
@@ -123,12 +136,8 @@
 		});
 	})
 
-
-			//changing image source on drop
-
-
-
-
-	helpButton.addEventListener("click", popLightBox);
+	helpButton.addEventListener("click", popLightBox); 
 	closeButton.addEventListener("click", closeLightBox);
+  weatherButton.addEventListener("click", addingWeatherSound);
+
 })();
